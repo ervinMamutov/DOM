@@ -76,14 +76,13 @@ div.insertAdjacentElement('beforebegin', carsDiv);
 
 const buttons = document.querySelectorAll('.btn');
 
-// eslint-disable-next-line jsdoc/require-jsdoc
-function handleClick(e) {
+const handleClick = (e) => {
   const currentButton = e.currentTarget;
   // currentButton.parentElement.remove();
   currentButton.closest('.autoCard').remove();
 
   console.log(currentButton.parentElement);
-}
+};
 
 buttons.forEach((button) => {
   button.addEventListener('click', handleClick);
