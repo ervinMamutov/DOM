@@ -1,6 +1,3 @@
-// Say hello let'us build a calculator
-alert('Hello there');
-
 const div = document.createElement('div');
 
 div.classList.add('wrapper');
@@ -65,12 +62,13 @@ const carsList = [
   { brand: 'Tesla', year: 2005, color: 'red' },
   { brand: 'Mercedes', year: 2017, color: 'black' },
   { brand: 'Subaru', year: 2020, color: 'orange' },
-
 ];
 
-const carsHTML = carsList.map(car => {
-  return generateAutoCard(car.brand, car.color, car.year);
-}).join('');
+const carsHTML = carsList
+  .map((car) => {
+    return generateAutoCard(car.brand, car.color, car.year);
+  })
+  .join('');
 
 carsDiv.innerHTML = carsHTML;
 
@@ -84,9 +82,9 @@ function handleClick(e) {
   currentButton.closest('.autoCard').remove();
 
   console.log(currentButton.parentElement);
-};
+}
 
-buttons.forEach(button => {
+buttons.forEach((button) => {
   button.addEventListener('click', handleClick);
 });
 
