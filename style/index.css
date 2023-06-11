@@ -12,3 +12,54 @@ body {
   height: 100%;
   background-color: #565454;
 }
+
+h1 {
+  text-align: center;
+  padding: 5px;
+  margin: 10px;
+}
+
+h2 {
+  text-align: center;
+  font-size: large;
+  padding: 3px;
+  margin: 5px;
+}
+
+p {
+  text-align: center;
+  font-size: medium;
+  padding: 3px;
+  margin: 5px;
+}
+
+.autos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.autoCard {
+  background-color: #ffe4c4;
+  color: #022419;
+  padding: 5px;
+  margin: 15px;
+}
+
+.btn {
+  text-align: center;
+  padding: 3px;
+  margin: 5px;
+}
+
+.text {
+  margin: 10px;
+  font-size: 18px;
+}
+
+img {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+  padding: 10px;
+  left: 30%;
+}

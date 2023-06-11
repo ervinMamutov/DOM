@@ -4,6 +4,7 @@
   "scripts": {
     "format": "prettier --write ./",
     "format:check": "prettier --check ./",
+    "format:fix": "prettier --write \"src/**/*.js\"",
     "lint:js": "eslint --max-warnings=0 --ext=.js --format=codeframe",
     "lint:ls": "ls-lint",
     "lint:md": "markdownlint --ignore node_modules --ignore docs --config ./.markdownlint.jsonc --fix ./ ",
