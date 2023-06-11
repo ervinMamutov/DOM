@@ -76,6 +76,7 @@ div.insertAdjacentElement('beforebegin', carsDiv);
 
 const buttons = document.querySelectorAll('.btn');
 
+// eslint-disable-next-line jsdoc/require-jsdoc
 function handleClick(e) {
   const currentButton = e.currentTarget;
   // currentButton.parentElement.remove();
